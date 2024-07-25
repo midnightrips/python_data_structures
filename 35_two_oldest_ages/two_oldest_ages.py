@@ -13,6 +13,11 @@ def two_oldest_ages(ages):
         >>> two_oldest_ages([1, 5, 5, 2])
         (2, 5)
     """
+    ages_set = set(ages)
+    ages_lst = list(ages_set)
+    ages_lst.sort()
+
+    return (ages_lst[-2], ages_lst[-1])
 
     # NOTE: don't worry about an optimized runtime here; it's fine if
     # you have a runtime worse than O(n)

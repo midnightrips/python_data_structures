@@ -12,3 +12,18 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+    new_list = []
+    count = 0
+    total = 1
+
+    for num in nums:
+        if num % 2 == 0:
+            new_list.append(num)
+            count += 1
+
+    if count == 0:
+        return 1
+    else:
+        for num in new_list:
+            total = num * total
+        return total

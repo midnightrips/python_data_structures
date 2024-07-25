@@ -12,3 +12,11 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
+    weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    nums = [1, 2, 3, 4, 5, 6, 7]
+
+    if day_of_week in nums:
+        return weekdays[day_of_week - 1]
+    else:
+        return None
